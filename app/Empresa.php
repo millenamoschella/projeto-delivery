@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Tag;
 
 
 class Empresa extends Model
@@ -13,5 +14,11 @@ class Empresa extends Model
         'descricao', 
         'coordenadas'
     ];
+
+    public function tags()
+    {
+        // return $this->belongsToMany('App\Tag');
+        return $this->belongsToMany(Tag::class);
+    }
 }
 
