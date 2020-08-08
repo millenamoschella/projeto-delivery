@@ -3,7 +3,7 @@
 use Illuminate\Database\Seeder;
 use App\Empresa;
 
-class AddEmpresas extends Seeder
+class EmpresasSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -52,6 +52,6 @@ class AddEmpresas extends Seeder
             'endereco' => 'Rua Anchieta Maria, 3467',
             'descricao' => 'Lanches de primeira',
             'coordenadas' => '09398843, 3344429'
-        ]); 
+        ]);
     }
 }

@@ -16,4 +16,3 @@ class Tag extends Model
         return $this->belongsToMany(Empresa::class);
     }
 }
-
